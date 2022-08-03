@@ -1,13 +1,58 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+  margin: 2rem;
+}
+
+input[type=number] {
+  width: 30rem;
+  height: 3rem;
+  border: .15rem solid #B3B6B7;
+  border-radius: 3rem;
+  outline: none;
+  padding: 0.5rem 1rem;
+  transition: all .2s;
+  margin-bottom: .2rem;
+}
+
+input[type=text]:focus {
+  background-color: white;
+  outline: .15rem solid #B3B6B7;
+}
+
+
+button {
+  width: 8rem;
+  height: 3rem;
+  background-color: cornflowerblue;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background-color: navy;
+  color: white;
+}
+
+button.disabled, button[disabled] {
+  background-color: gray;
+  color: black;
+}
+
+.user-list {
+  width: 40rem;
+  height: auto
+}
+
+ul {
+  list-style-type: none;
 }
